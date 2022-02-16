@@ -27,7 +27,7 @@ body:
     id: requirements
     attributes:
       label: GA/Production Requirements
-      description: Please list any outstanding features the customer requires for using the service in production
+      description: "Please list any outstanding features the customer requires for using the service in production
       value: "Ex. Virtual Network Integration"
      validations:
       required: true
@@ -35,7 +35,7 @@ body:
     id: featurerequests
     attributes:
       label: Post-GA Requests
-      description: Please list any non-production blocking feature requests the customer has
+      description: "Please list any non-production blocking feature requests the customer has"
      validations:
       required: true
   - type: dropdown
@@ -43,7 +43,7 @@ body:
     attributes:
       label: Core capabilities
       multiple: true
-      description: Which of the following optional capabilities is the customer using or interested in?
+      description: "Which of the following optional capabilities is the customer using or interested in?"
       options:
         - Dapr
         - Keda 
@@ -55,7 +55,7 @@ body:
     id: PII
     attributes:
       label: Acknowledgement
-      description: By submitting this issue, you acknowledge no customer names have been included in this submission
+      description: "By submitting this issue, you acknowledge no customer names have been included in this submission"
       options:
         - label: I agree I have not included any customer PII data in this submission.
       validations: 
