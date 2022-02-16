@@ -26,8 +26,8 @@ body:
   - type: textarea
     id: requirements
     attributes:
-      label: GA/Production Requirements
-      description: "Please list any outstanding features the customer requires for using the service in production
+      label: Production Requirements
+      description: "Please list any outstanding features the customer requires for using the service in production"
       value: "Ex. Virtual Network Integration"
      validations:
       required: true
