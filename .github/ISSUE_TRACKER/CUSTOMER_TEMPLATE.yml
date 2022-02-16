@@ -1,0 +1,60 @@
+name: Customer Tracker 
+description: File details regarding Azure Container Apps customer engagements. Do not include any customer names.
+title: "[Customer]: "
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this customer report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: 
+    attributes:
+      label: Description 
+      description: Tell us a bit about the customer and the initial engagement
+      value: "Ex. Why is the customer interested? What are their use cases?"
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: GA/Production Requirements
+      description: Please list any outstanding features the customer requires for using the service in production
+     validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Post-GA Requests
+      description: Please list any non-production blocking feature requests the customer has
+     validations:
+      required: true
+  - type: dropdown
+    id: dapr
+    attributes:
+      label: Core capabilities
+      multiple: true
+      description: Which of the following optional capabilities is the customer using or interested in?
+      options:
+        - Dapr
+        - Keda 
+        - Revisions
+        - Unsure
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you acknowledge no customer names have been included in this submission
+      options:
+        - label: I agree I have not included any customer PII data in this submission.
+          required: true
