@@ -31,14 +31,13 @@ body:
      validations:
       required: true
   - type: textarea
-    id: requirements
     attributes:
       label: Post-GA Requests
       description: Please list any non-production blocking feature requests the customer has
      validations:
       required: true
   - type: dropdown
-    id: dapr
+    id: capabilities
     attributes:
       label: Core capabilities
       multiple: true
@@ -51,10 +50,11 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: terms
+    id: PII
     attributes:
-      label: Code of Conduct
+      label: Acknowledgement
       description: By submitting this issue, you acknowledge no customer names have been included in this submission
       options:
         - label: I agree I have not included any customer PII data in this submission.
+      validations: 
           required: true
