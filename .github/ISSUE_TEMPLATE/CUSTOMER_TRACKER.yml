@@ -16,7 +16,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: 
+    id: description
     attributes:
       label: Description 
       description: Tell us a bit about the customer and the initial engagement
