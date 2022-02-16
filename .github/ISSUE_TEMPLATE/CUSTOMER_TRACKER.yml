@@ -24,18 +24,11 @@ body:
     validations:
       required: true
   - type: textarea
-    id: description
-    attributes:
-      label: Description 
-      description: Tell us a bit about the customer and the initial engagement
-      value: "Ex. Why is the customer interested? What are their use cases?"
-    validations:
-      required: true
-  - type: textarea
     id: requirements
     attributes:
       label: GA/Production Requirements
       description: Please list any outstanding features the customer requires for using the service in production
+      value: "Ex. Virtual Network Integration"
      validations:
       required: true
   - type: textarea
