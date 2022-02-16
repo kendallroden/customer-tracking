@@ -24,6 +24,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: description
+    attributes:
+      label: Description 
+      description: Tell us a bit about the customer and the initial engagement
+      value: "Ex. Why is the customer interested? What are their use cases?"
+    validations:
+      required: true
+  - type: textarea
     id: requirements
     attributes:
       label: GA/Production Requirements
@@ -31,6 +39,7 @@ body:
      validations:
       required: true
   - type: textarea
+    id: featurerequests
     attributes:
       label: Post-GA Requests
       description: Please list any non-production blocking feature requests the customer has
